@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 /**
- * Created by 43973990 on 2017/1/20.
+ * Created  on 2017/1/20.
  */
 
 @Entity
