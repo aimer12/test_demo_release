@@ -21,6 +21,35 @@ public class Person {
     private String firstName;
     private String lastName;
     private Boolean Married;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public Boolean getMarried() {
+        return Married;
+    }
+
+    public Sex getSex() {
+        return sex;
+    }
+
+    public Timestamp getUpdateTime() {
+        return updateTime;
+    }
+
+    public BigDecimal getProperty() {
+        return property;
+    }
+
     private enum Sex{ Male, Femal};
     private Sex sex;
 
