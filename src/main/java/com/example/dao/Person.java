@@ -20,7 +20,7 @@ public class Person {
 
     private String firstName;
     private String lastName;
-    private Boolean Married;
+    private Boolean married;
 
     public Long getId() {
         return id;
@@ -35,7 +35,7 @@ public class Person {
     }
 
     public Boolean getMarried() {
-        return Married;
+        return married;
     }
 
     public Sex getSex() {
@@ -56,8 +56,9 @@ public class Person {
     private Timestamp updateTime;
     private BigDecimal property;
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, Boolean married) {
                 this.firstName = firstName;
                 this.lastName = lastName;
+                this.married = married;
     }
 }

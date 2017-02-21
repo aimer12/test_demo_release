@@ -22,7 +22,7 @@ public class PersonRespositoryTest {
 
     @Test
     public void testFindbyId(){
-        Person person = new Person("dew","liu");
+        Person person = new Person("dew","liu", false);
         personRepository.save(person);
 
         List<Person> personList = personRepository.findAllByOrderByIdAsc();
