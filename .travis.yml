@@ -1,18 +1,17 @@
 language: java
 jdk:
-- oraclejdk8
 script:
 - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dsonar.host.url=https://sonarqube.com
   -Dsonar.login=$SonarQube_Token
 
-deploy:
-   provider: cloudfoundry
-   username: 384565922@qq.com
-   password: 
-     secure: aAk70SfJnowryeAj5L/zw3Yzob8xsTARhTefy+qX6u8w+nyMRelJtEOsjh4irLeCQFZtCRIvXI8unxy5AAMrbY8QpPfIPoue/0MUgoLKhVMk/fEdgvmncvuDoii5bRtPIGpRy67+OscIsCoTHjASXfVNSAHX8hTTct6d1/jZmvhLxFWs2xyzJmSQOMrXjpp/fBXfRUKvrHP67eYU2mjJD2MmaXI9cKqXpzC3wqRLUjjclZ2L5odFn/Y0UeF+S1c3UKMrt+kGHBat09vlKh18VNt6w4kTwN/tUqnz44slQ09I5a3KrMn3dXcj9hA7mDXteFa04/i8P34FG+ekRGjkrzFxR/5uDB/TAsQZ4VUnXm9KFKa6suhRievBzC0VJ4WJ/ZlFzMpbD3F+Pb7/Pcdpcy0MwpUH6ugioOkgblHaRaDXzXUM/U1m12eydSZQoHzCR4efdKYVmbyRjaUMcp9juZxxa6cduRrLPqkFfHFlrl2quxz71wkY3iczznA/3+Nzfscc+JeKXA9jzsx2S1fU676BjCHUAyoiXlN2WnzoxAcvfJ44M0Eqp4hKHyNjacZpbalDYaIehXV6QoV/uxC04julIrwNX8V/NBi2ge22FE/FSgGkx0s5WEPhSipJM48sSmFxkgDfKHzw8l41E599opiV+W1CXxGtAK1SihOnMwo=
-   api: https://api.run.pivotal.io
-   organization: aimeryin
-   space: development
-   on:
-    repo: aimer12/test_demo_release
-  
+#deploy:
+#   provider: cloudfoundry
+#   username: 384565922@qq.com
+#   password:
+#     secure: aAk70SfJnowryeAj5L/zw3Yzob8xsTARhTefy+qX6u8w+nyMRelJtEOsjh4irLeCQFZtCRIvXI8unxy5AAMrbY8QpPfIPoue/0MUgoLKhVMk/fEdgvmncvuDoii5bRtPIGpRy67+OscIsCoTHjASXfVNSAHX8hTTct6d1/jZmvhLxFWs2xyzJmSQOMrXjpp/fBXfRUKvrHP67eYU2mjJD2MmaXI9cKqXpzC3wqRLUjjclZ2L5odFn/Y0UeF+S1c3UKMrt+kGHBat09vlKh18VNt6w4kTwN/tUqnz44slQ09I5a3KrMn3dXcj9hA7mDXteFa04/i8P34FG+ekRGjkrzFxR/5uDB/TAsQZ4VUnXm9KFKa6suhRievBzC0VJ4WJ/ZlFzMpbD3F+Pb7/Pcdpcy0MwpUH6ugioOkgblHaRaDXzXUM/U1m12eydSZQoHzCR4efdKYVmbyRjaUMcp9juZxxa6cduRrLPqkFfHFlrl2quxz71wkY3iczznA/3+Nzfscc+JeKXA9jzsx2S1fU676BjCHUAyoiXlN2WnzoxAcvfJ44M0Eqp4hKHyNjacZpbalDYaIehXV6QoV/uxC04julIrwNX8V/NBi2ge22FE/FSgGkx0s5WEPhSipJM48sSmFxkgDfKHzw8l41E599opiV+W1CXxGtAK1SihOnMwo=
+#   api: https://api.run.pivotal.io
+#   organization: aimeryin
+#   space: development
+#   on:
+#    repo: aimer12/test_demo_release
+#
