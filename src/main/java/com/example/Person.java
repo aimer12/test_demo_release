@@ -20,16 +20,15 @@ public class Person {
 
     private String firstName;
     private String lastName;
-    private Boolean married;
+    private Boolean Married;
     private enum Sex{ Male, Femal};
     private Sex sex;
 
     private Timestamp updateTime;
     private BigDecimal property;
 
-    public Person(String firstName, String lastName，Boolean married) {
+    public Person(String firstName, String lastName) {
                 this.firstName = firstName;
                 this.lastName = lastName;
-                this.married=married;
     }
 }
