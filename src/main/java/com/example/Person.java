@@ -12,7 +12,7 @@ import java.sql.Timestamp;
 public class Person {
     public Person(){
 
-    };
+    }
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -20,15 +20,16 @@ public class Person {
 
     private String firstName;
     private String lastName;
-    private Boolean Married;
-    private enum Sex{ Male, Femal};
+    private Boolean married;
+    private enum Sex{ Male, Femal}
     private Sex sex;
 
     private Timestamp updateTime;
     private BigDecimal property;
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, Boolean married) {
                 this.firstName = firstName;
                 this.lastName = lastName;
+                this.married = married;
     }
 }
